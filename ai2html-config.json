@@ -1,0 +1,11 @@
+{	
+	"fonts": [
+        {
+            "aifont": "LucidaGrande-Bold",
+            "family": "LucidaGrande",
+            "weight":"700",
+            "style": ""
+        }
+       
+    ]
+}
