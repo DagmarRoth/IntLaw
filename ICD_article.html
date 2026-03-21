@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Courtroom at the Center of Everything</title>
+ 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+            background: #fff;
+        }
+ 
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
+ 
+        .header {
+            padding: 3em 0;
+        }
+ 
+        a {
+            color: #f05349;
+        }
+ 
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+ 
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+ 
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+ 
+        h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            font-size: 3em;
+            line-height: 1.1;
+        }
+ 
+        .subhead {
+            font-family: 'Lora', Georgia, serif;
+        }
+ 
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+        }
+ 
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+ 
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+ 
+        iframe {
+            padding-bottom: 1.2em;
+            border: none;
+        }
+ 
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fffbaf;
+            font-size: 0.85em;
+        }
+ 
+        .full-width figure {
+            text-align: center;
+        }
+ 
+        /* Two-column layout */
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin: 2em 0;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1em;
+        }
+ 
+        .two-column .column {
+            flex: 1;
+            min-width: 300px;
+        }
+ 
+        .two-column .column.text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .two-column .column iframe {
+            width: 100%;
+            min-height: 350px;
+        }
+ 
+        .two-column h3 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+ 
+        /* Responsive chart container */
+        .chart-container {
+            margin: 2em auto;
+            max-width: 900px;
+            padding: 0 1em;
+        }
+ 
+        .chart-container iframe {
+            width: 100%;
+            border: none;
+        }
+ 
+        .chart-title {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 0.3em;
+            text-align: center;
+        }
+ 
+        .chart-subtitle {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+ 
+        .two-column .chart-title,
+        .two-column .chart-subtitle {
+            text-align: left;
+        }
+ 
+        /* margin on mobile */
+        @media (max-width: 700px) {
+            body {
+                font-size: 18px;
+            }
+ 
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+ 
+            .two-column {
+                flex-direction: column;
+            }
+ 
+            .two-column .column {
+                min-width: 100%;
+            }
+ 
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>The Courtroom at the Center of Everything</h1>
+            <p class="subhead">How domestic courts became the last line of international justice</p>
+        </div>
+        <div class="byline">
+            <p>By <a href="https://dagmarroth.github.io/Website/">Dagmar Rothschild</a></p>
+        </div>
+        
+        <p>The plane touched down in Tripoli just hours after the man inside should have been transferred to The Hague. On January 21, 2025, Osama Almasri Najim, a former head of Libyan judicial police suspected of murder, torture, and sexual violence at the notorious Mitiga prison, walked off an Italian government aircraft as a free man. He was supposed to be in ICC custody. Instead, Italy released him two days after his arrest in a Turin hotel, and the warrant sitting in ICC files went unfulfilled.</p>
+        
+        <p>Cristina Orsini of Lawyers for Justice in Libya called it a blow to the Rome Statute, the treaty that governs the ICC. But it was also something else: another data point in a longer, quieter story about where international justice actually happens.</p>
+        
+        <p>The answer, increasingly, is in national courtrooms.</p>
+    </div>
+ 
+    <!-- Two-column section: Donut chart + explanation -->
+    <div class="two-column">
+        <div class="column">
+            <p class="chart-title">Where International Crimes are Prosecuted</p>
+            <p class="chart-subtitle">Share of prosecutions by court type</p>
+            <iframe src="donut.html" height="380"></iframe>
+        </div>
+        <div class="column text">
+            <h3>The shift to domestic courts</h3>
+            <p>Nearly two-thirds of all international crime prosecutions — 64% — now happen in domestic courts. Hybrid tribunals handle about 20%. The UN ad-hoc bodies that defined international justice after Rwanda and Yugoslavia? They account for just 15%.</p>
+            <p>The era of the purpose-built international tribunal, created in the image of Nuremberg, is no longer dominant. The courtroom that matters most is staffed by national judges, working under national law, answerable to national political systems.</p>
+        </div>
+    </div>
+ 
+    <div class="content">
+        <p>This shift was decades in the making. Through the 1990s, the vocabulary of prosecution itself expanded. Terrorism charges appeared alongside war crimes. Material support statutes emerged. Countries like the Netherlands, Tanzania, and Bosnia each developed their own approaches, different clusters of charges, different timelines.</p>
+    </div>
+ 
+    <!-- Responsive ai2html chart goes here -->
+    <div class="chart-container">
+        <p class="chart-title">The global landscape of Genocide Prosecutions</p>
+        <p class="chart-subtitle">Types of international crimes charged in domestic courts, by country</p>
+        <iframe src="genocide.html" height="540"></iframe>
+    </div>
+ 
+    <div class="content">
+        <p>Rwanda and Tanzania show the highest concentrations of genocide-specific charges. Bosnia carries the weight of Srebrenica. But look at the Netherlands, the United States, France, Argentina, Canada, their bars are mixed. Genocide sits alongside war crimes, crimes against humanity, terrorism. These countries have stretched their legal frameworks to prosecute crimes committed on the other side of the world, by people who passed through their borders or whose victims did.</p>
+        
+        <p>The geography of accountability no longer follows the geography of atrocity.</p>
+    
+            <h3>The Rome Statute paradox</h3>
+            <p>Here's what makes this complicated: the country that prosecutes more international crimes than any other, the United States, with 96 domestic cases, never ratified the Rome Statute. It actually "unsigned" the treaty in 2002.</p>
+            <p>Israel, with 11 cases, also withdrew its signature. Together, non-Rome Statute countries account for 139 of 355 domestic prosecutions — nearly 40%.</p>
+            <p>The architecture of international justice depends on treaties that some of its most active participants refuse to join.</p>
+
+   
+            <p class="chart-title">Prosecutions by Rome Statute Status</p>
+            <p class="chart-subtitle">Domestic cases in treaty members vs. non-members</p>
+            <iframe src="responsive-rome.html" width="100%" height="480"></iframe>
+       
+ 
+        <p>International justice migrated into domestic courts not by accident but by design. UN tribunals are expensive, slow, and depend on Security Council consensus that rarely materializes. Domestic courts offered a workaround. The Genocide Prosecution Network coordinates cross-border efforts. National units combine counterterrorism and international crimes expertise. On paper, this is the mature, innovative face of accountability — courts doing more, charging more, potentially delivering fuller justice than the older institutions ever could.</p>
+        
+        <p>But domestic courts are political institutions. They sit inside states that have bilateral relationships, energy dependencies, trade routes, migration deals with countries whose nationals show up on ICC warrant lists. When those pressures collide with international obligations, that 64% figure stops looking like capacity and starts looking like vulnerability.</p>
+        
+        <p>The case for this system rests on one assumption: that domestic courts can be trusted to carry the weight placed on them. Italy's failure with Almasri doesn't disprove that assumption — no single case can — but it's a stress test the system can't afford to ignore.</p>
+        
+        <p>What happens when the court at the center of everything is answerable to a government that finds it inconvenient?</p>
+        
+        <p>The plane has already landed.</p>
+ 
+    <div class="footer">
+        <div class="content">
+            <p>Data from the International Crimes Database. Project on <a href="https://github.com/">GitHub</a>.</p>
+        </div>
+    </div>
+</body>
+ 
+</html>
